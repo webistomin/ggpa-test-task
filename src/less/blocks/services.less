@@ -1,0 +1,95 @@
+.services {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background-color: @color-background--second;
+
+  &__desc {
+    color: @color-base;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    padding-top: 85px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(36,211,67, 0.1);
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:first-child {
+      &::before {
+        background-image: url("../img/icon-shop.svg");
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url("../img/icon-design.svg");
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url("../img/icon-computer.svg");
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      &::before {
+        background-image: url("../img/icon-home.svg");
+      }
+    }
+  }
+
+  &__service {
+    color: @color-text--second;
+    font-family: "Circular Std", Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-family: "Circular Std", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    color: @color-text--second;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  &__btn {
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: #1c45a4;
+      box-shadow: none;
+    }
+  }
+}
