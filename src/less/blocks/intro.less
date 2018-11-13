@@ -1,0 +1,38 @@
+.intro {
+  background-image: url("../img/intro-people.svg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 270px;
+  margin-top: 20px;
+
+  &__title {
+    position: relative;
+    font-family: "Circular Std", Arial, sans-serif;
+    font-weight: 900;
+    color: @color-base;
+    margin: 0;
+    margin-bottom: 40px;
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      width: 100px;
+      height: 3px;
+      background-color: @color-action;
+    }
+  }
+
+  &__desc {
+    color: @color-text;
+    font-family: "PT Serif", Arial, serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 24px;
+  }
+}
