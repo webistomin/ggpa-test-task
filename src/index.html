@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/min/tiny-slider.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -37,7 +39,7 @@
     <section class="clients">
       <div class="clients__container container">
         <h2 class="clients__title title">Client list</h2>
-        <p class="client__desc">Creating beautiful digital products engineered to drive growth for the world’s leading brands.</p>
+        <p class="client__desc desc">Creating beautiful digital products engineered to drive growth for the world’s leading brands.</p>
         <ul class="clients__list">
           <li class="clients__item">
             <figure class="clients__pic">
@@ -293,5 +295,16 @@
     </div>
   </footer>
   <script defer src="js/script.min.js"></script>
+  <script>
+    var slider = tns({
+      container: '.clients__list',
+      items: 1,
+      slideBy: 'page',
+      autoplay: true,
+      controls: false,
+      nav: false,
+      autoplayButtonOutput: false
+    });
+  </script>
 </body>
 </html>
