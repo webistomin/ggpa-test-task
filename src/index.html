@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__inner">
-      <img src="#" alt="dhrubok" class="page-header__logo">
+      <img src="img/logo.svg" class="page-header__logo" alt="Dhrubok"  width="201" height="43">
+      <button class="page-header__toggle" type="button">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#" class="main-nav__link">Work</a></li>
@@ -36,34 +40,44 @@
         <p class="client__desc">Creating beautiful digital products engineered to drive growth for the world’s leading brands.</p>
         <ul class="clients__list">
           <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
+            <figure class="clients__pic">
+              <picture>
+                <source type="image/webp" srcset="img/logo-foundmoto@1x.webp 1x, img/logo-foundmoto@2x.webp 2x">
+                <img class="clients__img" src="img/logo-foundmoto@1x.jpg" srcset="img/logo-foundmoto@2x.jpg 2x" alt="Foundmoto" width="200" height="160">
+              </picture>
+            </figure>
           </li>
           <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
+            <figure class="clients__pic">
+              <picture>
+                <source type="image/webp" srcset="img/logo-sparrow@1x.webp 1x, img/logo-sparrow@2x.webp 2x">
+                <img class="clients__img" src="img/logo-sparrow@1x.jpg" srcset="img/logo-sparrow@2x.jpg 2x" alt="Sparrow" width="200" height="160">
+              </picture>
+            </figure>
           </li>
           <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
+            <figure class="clients__pic">
+              <picture>
+                <source type="image/webp" srcset="img/logo-eagle@1x.webp 1x, img/logo-eagle@2x.webp 2x">
+                <img class="clients__img" src="img/logo-eagle@1x.jpg" srcset="img/logo-eagle@2x.jpg 2x" alt="Eagle" width="200" height="160">
+              </picture>
+            </figure>
           </li>
           <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
+            <figure class="clients__pic">
+              <picture>
+                <source type="image/webp" srcset="img/logo-china@1x.webp 1x, img/logo-china@2x.webp 2x">
+                <img class="clients__img" src="img/logo-china@1x.jpg" srcset="img/logo-china@2x.jpg 2x" alt="China" width="200" height="160">
+              </picture>
+            </figure>
           </li>
           <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
-          </li>
-          <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
-          </li>
-          <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
-          </li>
-          <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
-          </li>
-          <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
-          </li>
-          <li class="clients__item">
-            <img src="#" alt="#" class="clients__img">
+            <figure class="clients__pic">
+              <picture>
+                <source type="image/webp" srcset="img/logo-juicy@1x.webp 1x, img/logo-juicy@2x.webp 2x">
+                <img class="clients__img" src="img/logo-juicy@1x.jpg" srcset="img/logo-juicy@2x.jpg 2x" alt="Juicy" width="200" height="160">
+              </picture>
+            </figure>
           </li>
         </ul>
       </div>
@@ -124,23 +138,38 @@
         <p class="testimonials__desc">Here’s what our customer’s say</p>
         <ul class="testimonials__list">
           <li class="testimonials__item">
-            <img src="#" alt="#" class="testimonials__img">
+            <img src="img/logo-amc.svg" alt="AMC" width="114" height="60" class="testimonials__img">
             <p class="testimonials__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
-            <img src="#" alt="#" class="testimonials__avatar">
+            <figure class="testimonials__pic">
+              <picture>
+                <source type="image/webp" srcset="img/ava-1@1x.webp 1x, img/ava-1@2x.webp 2x">
+                <img class="testimonials__avatar" src="img/ava-1@1x.png" srcset="img/ava-1@2x.png 2x" alt="Susan Herera" width="60" height="60">
+              </picture>
+            </figure>
             <span class="testimonials__name">Susan Herrera</span>
             <span class="testimonials__post">Co-Founder, PHP Group</span>
           </li>
           <li class="testimonials__item">
-            <img src="#" alt="#" class="testimonials__img">
+            <img src="img/logo-cinemax.svg" alt="Cinemax" width="120" height="61" class="testimonials__img">
             <p class="testimonials__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
-            <img src="#" alt="#" class="testimonials__avatar">
+            <figure class="testimonials__pic">
+              <picture>
+                <source type="image/webp" srcset="img/ava-2@1x.webp 1x, img/ava-2@2x.webp 2x">
+                <img class="testimonials__avatar" src="img/ava-2@1x.png" srcset="img/ava-2@2x.png 2x" alt="Susan Herera" width="60" height="60">
+              </picture>
+            </figure>
             <span class="testimonials__name">Susan Herrera</span>
             <span class="testimonials__post">Co-Founder, PHP Group</span>
           </li>
           <li class="testimonials__item">
-            <img src="#" alt="#" class="testimonials__img">
+            <img src="img/logo-bros.svg" alt="Bros" width="60" height="61" class="testimonials__img">
             <p class="testimonials__text">Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor.</p>
-            <img src="#" alt="#" class="testimonials__avatar">
+            <figure class="testimonials__pic">
+              <picture>
+                <source type="image/webp" srcset="img/ava-3@1x.webp 1x, img/ava-3@2x.webp 2x">
+                <img class="testimonials__avatar" src="img/ava-3@1x.png" srcset="img/ava-3@2x.png 2x" alt="Susan Herera" width="60" height="60">
+              </picture>
+            </figure>
             <span class="testimonials__name">Susan Herrera</span>
             <span class="testimonials__post">Co-Founder, PHP Group</span>
           </li>
@@ -155,26 +184,41 @@
           <li class="blog__item">
             <h3 class="blog__heading">Android 9 Pie : What’s Exciting</h3>
             <div class="blog__author">
-              <img src="#" alt="#" class="blog__avatar">
+              <figure class="blog__pic">
+                <picture>
+                  <source type="image/webp" srcset="img/ava-4@1x.webp 1x, img/ava-4@2x.webp 2x">
+                  <img class="blog__avatar" src="img/ava-4@1x.png" srcset="img/ava-4@2x.png 2x" alt="Susan Herera" width="53" height="51">
+                </picture>
+              </figure>
               <span class="blog__name">Fatema Akther</span>
-              <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
             </div>
+            <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
           </li>
           <li class="blog__item">
             <h3 class="blog__heading">iOS 10 Release : What’s New!</h3>
             <div class="blog__author">
-              <img src="#" alt="#" class="blog__avatar">
+              <figure class="blog__pic">
+                <picture>
+                  <source type="image/webp" srcset="img/ava-4@1x.webp 1x, img/ava-4@2x.webp 2x">
+                  <img class="blog__avatar" src="img/ava-4@1x.png" srcset="img/ava-4@2x.png 2x" alt="Susan Herera" width="53" height="51">
+                </picture>
+              </figure>
               <span class="blog__name">Fatema Akther</span>
-              <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
             </div>
+            <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
           </li>
           <li class="blog__item">
             <h3 class="blog__heading">Adobe XD Introducing Flinto</h3>
             <div class="blog__author">
-              <img src="#" alt="#" class="blog__avatar">
+              <figure class="blog__pic">
+                <picture>
+                  <source type="image/webp" srcset="img/ava-4@1x.webp 1x, img/ava-4@2x.webp 2x">
+                  <img class="blog__avatar" src="img/ava-4@1x.png" srcset="img/ava-4@2x.png 2x" alt="Susan Herera" width="53" height="51">
+                </picture>
+              </figure>
               <span class="blog__name">Fatema Akther</span>
-              <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
             </div>
+            <p class="blog__text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message”</p>
           </li>
         </ul>
       </div>
@@ -248,5 +292,6 @@
       </ul>
     </div>
   </footer>
+  <script defer src="js/script.min.js"></script>
 </body>
 </html>

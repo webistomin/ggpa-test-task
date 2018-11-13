@@ -1,0 +1,38 @@
+.main-nav {
+  top: 83px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  background: @color-base;
+
+  &--closed {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &--opened {
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+    font-family: "Circular Std", Arial, serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      color: @color-action;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

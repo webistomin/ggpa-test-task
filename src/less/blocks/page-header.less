@@ -1,0 +1,58 @@
+.page-header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  &__toggle {
+    width: 34px;
+    height: 25px;
+    position: relative;
+    z-index: 3;
+
+    & span {
+      position: absolute;
+      display: block;
+      width: inherit;
+      height: 3px;
+      background-color: @color-base;
+      border-radius: 27px;
+      transition: all 0.3s ease-in-out;
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 11px;
+      }
+
+      &:last-child {
+        top: 22px;
+      }
+    }
+
+    &--opened {
+      & span {
+        transition: all 0.3s ease-in-out;
+
+        &:first-child {
+          transform: rotate(45deg);
+          top: 10px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: rotate(-45deg);
+          top: 10px;
+        }
+      }
+    }
+  }
+}
