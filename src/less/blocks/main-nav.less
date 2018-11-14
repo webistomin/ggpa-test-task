@@ -37,4 +37,28 @@
       opacity: 0.6;
     }
   }
+
+  @media @screen-md {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    background: transparent;
+
+    &--closed {
+      transform: none;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin: 0 10px;
+    }
+
+    &__link {
+      color: @color-base;
+    }
+  }
 }

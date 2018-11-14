@@ -79,4 +79,20 @@
     color: @color-heading;
     opacity: 0.8;
   }
+
+  @media @screen-md {
+    padding-top: 88px;
+    padding-bottom: 88px;
+
+    &__item {
+      margin: 0;
+      width: 412px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
 }

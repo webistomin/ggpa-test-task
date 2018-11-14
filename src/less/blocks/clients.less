@@ -2,4 +2,20 @@
   &__item {
     text-align: center;
   }
+
+  &__break {
+    display: none;
+  }
+
+  @media @screen-md {
+    padding-bottom: 40px;
+
+    &__desc {
+      margin-bottom: 50px;
+    }
+
+    &__break {
+      display: block;
+    }
+  }
 }

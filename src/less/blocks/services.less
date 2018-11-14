@@ -1,6 +1,6 @@
 .services {
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   background-color: @color-background--second;
 
   &__desc {
@@ -51,7 +51,6 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
       &::before {
         background-image: data-uri('../img/icon-home.svg');
       }
@@ -101,7 +100,6 @@
       max-width: 300px;
       min-height: 420px;
       box-sizing: border-box;
-      float: left;
     }
 
     &__list {
@@ -113,6 +111,34 @@
 
     &__btn {
       margin-top: auto;
+    }
+  }
+
+  @media @screen-md {
+    padding-top: 80px;
+
+    &__title {
+      text-align: center;
+    }
+
+    &__desc {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      max-width: 312px;
+    }
+
+    &__title {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__text {
+      margin: 0;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
