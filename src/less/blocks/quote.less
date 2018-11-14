@@ -1,0 +1,58 @@
+.quote {
+  margin-bottom: 100px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: @color-base;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-family: "Circular Std", Arial, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    max-width: 310px;
+    font-family: "Circular Std", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  &__btn {
+    margin-top: 15px;
+    display: block;
+    box-sizing: border-box;
+    max-width: 196px;
+    padding: 10px 25px;
+    font-family: "Circular Std", Arial, sans-serif;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    color: @color-text;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      background-color: @color-action;
+      color: #ffffff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
