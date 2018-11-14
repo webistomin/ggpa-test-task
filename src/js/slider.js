@@ -3,9 +3,20 @@ var tns=function(){var t=window,Ii=t.requestAnimationFrame||t.webkitRequestAnima
 var slider = tns({
   container: '.clients__list',
   items: 1,
-  slideBy: 'page',
+  slideBy: 1,
   autoplay: true,
   controls: false,
   nav: false,
-  autoplayButtonOutput: false
+  autoplayButtonOutput: false,
+  responsive: {
+    660: {
+      items: 2
+    },
+    992: {
+      items: 3
+    },
+    1440: {
+      items: 5
+    }
+  }
 });

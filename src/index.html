@@ -36,12 +36,36 @@ To emphasise this I use inline style="display: none" -->
       </button>
       <nav class="main-nav main-nav--closed" role="navigation">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Work</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Case study</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Blog</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Contact</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Contact</a></li>
+          <li class="main-nav__item">
+            <a data-scroll href="#services" class="main-nav__link">
+              Work
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a data-scroll href="#about" class="main-nav__link">
+              About
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a data-scroll href="#case" class="main-nav__link">
+              Case study
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a data-scroll href="#blog" class="main-nav__link">
+              Blog
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a data-scroll href="#about" class="main-nav__link">
+              Contact
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a data-scroll href="#about" class="main-nav__link">
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -57,7 +81,7 @@ To emphasise this I use inline style="display: none" -->
     </section>
   </header>
   <main class="page-content" role="main">
-    <section class="clients">
+    <section class="clients" id="clients">
       <div class="clients__container container">
         <h2 class="clients__title title">Client list</h2>
         <p class="clients__desc desc">Creating beautiful digital products engineered
@@ -146,7 +170,7 @@ To emphasise this I use inline style="display: none" -->
         </ul>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__container container">
         <h2 class="services__title title">Our services</h2>
         <p class="services__desc desc">"The world has become so fast paced that people don’t"</p>
@@ -174,7 +198,7 @@ To emphasise this I use inline style="display: none" -->
         </ul>
       </div>
     </section>
-    <section class="case">
+    <section class="case" id="case">
       <div class="case__container container">
         <h2 class="case__title title">Case study</h2>
         <p class="case__desc desc">That’s how we complete our work</p>
@@ -196,7 +220,7 @@ To emphasise this I use inline style="display: none" -->
         </ul>
       </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
       <div class="testimonials__container container">
         <h2 class="testimonials__title title">Testimonials</h2>
         <p class="testimonials__desc desc">Here’s what our customer’s say</p>
@@ -240,7 +264,7 @@ To emphasise this I use inline style="display: none" -->
         </ul>
       </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blog__container container">
         <h2 class="blog__title title">Our blog</h2>
         <p class="blog__desc desc">Recommended Reading</p>
@@ -287,7 +311,7 @@ To emphasise this I use inline style="display: none" -->
         </ul>
       </div>
     </section>
-    <section class="quote">
+    <section class="quote" id="quote">
       <div class="quote__container container">
         <div class="quote__inner">
           <h3 class="quote__title">Request a free quote</h3>
@@ -300,7 +324,7 @@ To emphasise this I use inline style="display: none" -->
   </main>
   <footer class="page-footer" role="contentinfo">
     <div class="page-footer__container container">
-      <section class="about">
+      <section class="about" id="about">
         <h3 class="about__title">Dhrubok Infotech Services Ltd.</h3>
         <address class="about__address">
           Century Center (8th floor) Kha-225, Progoti<br>
@@ -343,19 +367,19 @@ To emphasise this I use inline style="display: none" -->
         <h3 class="page-footer__title">Our Services</h3>
         <ul class="page-footer__list">
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Mobile App Development</a>
+            <a data-scroll href="#services" class="page-footer__link">Mobile App Development</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Web Application Development</a>
+            <a data-scroll href="#services" class="page-footer__link">Web Application Development</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">UI/UX Design</a>
+            <a data-scroll href="#services" class="page-footer__link">UI/UX Design</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Offshore Development Team</a>
+            <a data-scroll href="#services" class="page-footer__link">Offshore Development Team</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Software Development Partner</a>
+            <a data-scroll href="#services" class="page-footer__link">Software Development Partner</a>
           </li>
         </ul>
       </div>
@@ -363,16 +387,16 @@ To emphasise this I use inline style="display: none" -->
         <h3 class="page-footer__title">About Office</h3>
         <ul class="page-footer__list">
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Company</a>
+            <a data-scroll href="#services" class="page-footer__link">Company</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Portfolio</a>
+            <a data-scroll href="#testimonials" class="page-footer__link">Portfolio</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Client stories</a>
+            <a data-scroll href="#clients" class="page-footer__link">Client stories</a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__link">Career</a>
+            <a data-scroll href="#services" class="page-footer__link">Career</a>
           </li>
         </ul>
       </div>
