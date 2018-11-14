@@ -34,26 +34,26 @@
 
     &:first-child {
       &::before {
-        background-image: url("../img/icon-shop.svg");
+        background-image: data-uri("../img/icon-shop.svg");
       }
     }
 
     &:nth-child(2) {
       &::before {
-        background-image: url("../img/icon-design.svg");
+        background-image: data-uri("../img/icon-design.svg");
       }
     }
 
     &:nth-child(3) {
       &::before {
-        background-image: url("../img/icon-computer.svg");
+        background-image: data-uri("../img/icon-computer.svg");
       }
     }
 
     &:last-child {
       margin-bottom: 0;
       &::before {
-        background-image: url("../img/icon-home.svg");
+        background-image: data-uri('../img/icon-home.svg');
       }
     }
   }
@@ -91,6 +91,28 @@
       transition: all 0.3s ease-in-out;
       background-color: #1c45a4;
       box-shadow: none;
+    }
+  }
+
+  @media @screen-sm {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      min-height: 420px;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    &__list {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__btn {
+      margin-top: auto;
     }
   }
 }
