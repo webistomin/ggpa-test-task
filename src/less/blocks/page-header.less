@@ -88,4 +88,28 @@
       margin-bottom: 60px;
     }
   }
+
+  @media @screen-lg {
+    position: relative;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 853px;
+      height: 948px;
+      background-image: url("../img/header-decor.svg");
+      background-repeat: no-repeat;
+      right: 0;
+      top: -48px;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    margin-bottom: 0;
+
+    &__inner {
+      margin-bottom: 146px;
+    }
+  }
 }
