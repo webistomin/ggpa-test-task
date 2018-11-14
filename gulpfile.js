@@ -13,6 +13,7 @@ var mqpacker = require("css-mqpacker");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
+var babel = require('gulp-babel');
 var concat = require("gulp-concat");
 var del = require("del");
 var runSequence = require("run-sequence");
@@ -104,6 +105,9 @@ gulp.task("scripts", function() {
     .pipe(concat("script.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(rename("script.min.js"))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });

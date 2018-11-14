@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Dhrubok</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/min/tiny-slider.js"></script>
+  <link rel="preload" href="fonts/circularStd-black.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/circularStd-bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/circularStd-book.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/circularStd-medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/pt-serif-latin-regular.woff2" as="font" crossorigin>
+  <meta name="description" content="Dhrubok">
+  <meta name="keywords" content="Dhrubok">
+  <meta name="format-detection" content="telephone=no">
 </head>
-<body>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+<div style="display:none">
+  <include src="build/img/symbols.svg"></include>
+</div>
   <header class="page-header">
     <div class="page-header__inner">
-      <img src="img/logo.svg" class="page-header__logo" alt="Dhrubok"  width="201" height="43">
-      <button class="page-header__toggle" type="button">
+      <a href="/" class="page-header__link">
+        <img src="img/logo.svg" class="page-header__logo" alt="Dhrubok"  width="201" height="43">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <nav class="main-nav main-nav--closed">
@@ -295,16 +307,5 @@
     </div>
   </footer>
   <script defer src="js/script.min.js"></script>
-  <script>
-    var slider = tns({
-      container: '.clients__list',
-      items: 1,
-      slideBy: 'page',
-      autoplay: true,
-      controls: false,
-      nav: false,
-      autoplayButtonOutput: false
-    });
-  </script>
 </body>
 </html>
