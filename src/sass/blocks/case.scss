@@ -27,7 +27,7 @@
 
     &:first-child {
       background-image: url("../img/case-1@1x.jpg");
-      @supports (background-image: url("../img/case-1@1x.webp")) {
+      @supports (background: -webkit-image-set(url("../img/case-1@1x.webp") 1x)) {
         background-image: url("../img/case-1@1x.webp");
       }
 
@@ -36,7 +36,7 @@
       (min-resolution: 192dpi) {
         background-image: url("../img/case-1@2x.jpg");
         background-size: 572px 253px;
-        @supports (background-image: url("../img/case-1@2x.webp")) {
+        @supports (background: -webkit-image-set(url("../img/case-1@2x.webp") 2x)) {
           background-image: url("../img/case-1@2x.webp");
         }
       }
@@ -46,7 +46,7 @@
       margin-bottom: 0;
 
       background-image: url("../img/case-2@1x.jpg");
-      @supports (background-image: url("../img/case-2@1x.webp")) {
+      @supports (background: -webkit-image-set(url("../img/case-2@1x.webp") 1x)) {
         background-image: url("../img/case-2@1x.webp");
       }
 
@@ -56,7 +56,7 @@
         background-image: url("../img/case-2@2x.jpg");
         background-size: 572px 253px;
 
-        @supports (background-image: url("../img/case-2@2x.webp")) {
+        @supports (background: -webkit-image-set(url("../img/case-2@2x.webp") 2x)) {
           background-image: url("../img/case-2@2x.webp");
         }
       }

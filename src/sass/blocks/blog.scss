@@ -27,7 +27,7 @@
 
     &:first-child {
       background-image: url("../img/blog-1@1x.jpg");
-      @supports (background-image: url("../img/blog-1@1x.webp")) {
+      @supports (background: -webkit-image-set(url("../img/blog-1@1x.webp") 1x)) {
         background-image: url("../img/blog-1@1x.webp");
       }
 
@@ -37,15 +37,15 @@
         background-image: url("../img/blog-1@2x.jpg");
         background-size: 371px 201px;
 
-        @supports (background-image: url("../img/blog-1@2x.webp")) {
-          background-image: url("../img/blog-1@2x.webp");
+        @supports (background: -webkit-image-set(url("../img/blog-2@2x.webp") 2x)) {
+          background-image: url("../img/blog-2@2x.webp");
         }
       }
     }
 
     &:nth-child(2) {
       background-image: url("../img/blog-2@1x.jpg");
-      @supports (background-image: url("../img/blog-2@1x.webp")) {
+      @supports (background: -webkit-image-set(url("../img/blog-2@1x.webp") 1x)) {
         background-image: url("../img/blog-2@1x.webp");
       }
 
@@ -55,7 +55,7 @@
         background-image: url("../img/blog-2@2x.jpg");
         background-size: 371px 201px;
 
-        @supports (background-image: url("../img/blog-2@2x.webp")) {
+        @supports (background: -webkit-image-set(url("../img/blog-2@2x.webp") 2x)) {
           background-image: url("../img/blog-2@2x.webp");
         }
       }
@@ -63,7 +63,7 @@
 
     &:last-child {
       background-image: url("../img/blog-3@1x.jpg");
-      @supports (background-image: url("../img/blog-3@1x.webp")) {
+      @supports (background: -webkit-image-set(url("../img/blog-3@1x.webp") 1x)) {
         background-image: url("../img/blog-3@1x.webp");
       }
 
@@ -73,7 +73,7 @@
         background-image: url("../img/blog-3@2x.jpg");
         background-size: 371px 201px;
 
-        @supports (background-image: url("../img/blog-3@2x.webp")) {
+        @supports (background: -webkit-image-set(url("../img/blog-3@2x.webp") 2x)) {
           background-image: url("../img/blog-3@2x.webp");
         }
       }
