@@ -1,6 +1,7 @@
 .testimonials {
   padding-top: 40px;
   padding-bottom: 20px;
+
   background-color: $color-background--second;
 
   &__title {
@@ -9,42 +10,47 @@
 
   &__desc {
     margin-bottom: 50px;
+
     text-align: center;
   }
 
   &__item {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
     padding-top: 30px;
     padding-bottom: 20px;
+
     text-align: center;
+
     background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 
   &__text {
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-bottom: 30px;
-    color: $color-text;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    font-weight: 300;
     font-size: 18px;
     font-family: $font-family--sans-serif;
-    font-weight: 300;
+    color: $color-text;
   }
 
   &__name {
     display: block;
-    padding-top: 20px;
     margin-bottom: 7px;
-    font-size: 17px;
+    padding-top: 20px;
+
     font-weight: 300;
+    font-size: 17px;
     font-family: $font-family--sans-serif;
     color: $color-text;
   }
 
   &__post {
-    font-size: 15px;
     font-weight: 300;
+    font-size: 15px;
     font-family: $font-family--sans-serif;
     color: rgba(41, 41, 41, 0.8);
   }

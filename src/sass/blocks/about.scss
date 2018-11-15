@@ -2,33 +2,36 @@
   margin-bottom: 15px;
 
   &__title {
-    font-family: $font-family--sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-    color: $color-heading;
     margin: 0;
     margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $font-family--sans-serif;
+    color: $color-heading;
   }
 
   &__address {
+    margin-bottom: 15px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
     font-family: $font-family--sans-serif;
     color: #86939e;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
     font-style: normal;
-    margin-bottom: 15px;
   }
 
   &__link {
     display: block;
-    font-family: $font-family--sans-serif;
+    margin-bottom: 15px;
+
+    font-weight: 300;
     font-size: 14px;
     line-height: 25px;
-    font-weight: 300;
+    font-family: $font-family--sans-serif;
     color: #86939e;
-    margin-bottom: 15px;
 
     &:hover,
     &:focus {

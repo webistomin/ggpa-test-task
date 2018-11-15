@@ -1,38 +1,45 @@
 .intro {
+  margin-top: 20px;
+  padding-bottom: 270px;
+
   background-image: url("../img/intro-people.svg");
-  background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-bottom: 270px;
-  margin-top: 20px;
+  background-size: 100% 50%;
 
   &__title {
     position: relative;
-    font-family: $font-family--sans-serif;
-    font-weight: 900;
-    color: $color-base;
+
     margin: 0;
     margin-bottom: 40px;
 
+    font-weight: 900;
+    font-family: $font-family--sans-serif;
+    color: $color-base;
+
     &::after {
-      display: block;
       content: "";
       position: absolute;
-      left: 0;
       bottom: -20px;
+      left: 0;
+
+      display: block;
       width: 100px;
       height: 3px;
+
       background-color: $color-action;
     }
   }
 
   &__desc {
-    color: $color-text;
-    font-weight: 400;
-    line-height: 30px;
-    font-size: 18px;
-    opacity: 0.8;
     margin-bottom: 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-text;
+
+    opacity: 0.8;
   }
 
   &__break {
@@ -44,19 +51,21 @@
   }
 
   @media (min-width: $screen-md) {
-    background-image: url("../img/intro-people.svg"), url("../img/intro-decor.svg");
     padding-bottom: 190px;
-    background-size: 45% 50%, 664px 151px;
+
+    background-image: url("../img/intro-people.svg"), url("../img/intro-decor.svg");
     background-position: 100% 40%, left bottom;
+    background-size: 45% 50%, 664px 151px;
 
     &__break {
       display: block;
     }
 
     &__title {
+      margin-bottom: 62px;
+
       font-size: 65px;
       line-height: 70px;
-      margin-bottom: 62px;
 
       &::after {
         bottom: -25px;
@@ -70,7 +79,8 @@
 
   @media (min-width: $screen-lg) {
     padding-bottom: 230px;
-    background-size: 601px 335px, 864px 151px;
+
     background-position: 90% 52%, left 470px;
+    background-size: 601px 335px, 864px 151px;
   }
 }

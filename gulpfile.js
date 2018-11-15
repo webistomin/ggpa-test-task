@@ -20,11 +20,13 @@ var replace = require('gulp-replace');
 var uglify = require("gulp-uglify");
 var babel = require('gulp-babel');
 var concat = require("gulp-concat");
+var sourcemaps = require('gulp-sourcemaps');
+var csscomb = require("gulp-csscomb");
 
 gulp.task("csscomb", function() {
-  return gulp.src("src/less/blocks/*.less")
+  return gulp.src("src/sass/blocks/*.scss")
     .pipe(csscomb(require("./.csscomb.json")))
-    .pipe(gulp.dest("src/less/blocks"));
+    .pipe(gulp.dest("src/sass/blocks"));
 });
 
 gulp.task("css", function () {
@@ -37,6 +39,7 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });

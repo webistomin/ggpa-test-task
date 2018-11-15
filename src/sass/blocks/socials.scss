@@ -9,12 +9,13 @@
     align-items: center;
     width: 40px;
     height: 40px;
+
     font-size: 0;
 
     &:hover,
     &:focus {
       .socials__icon {
-        fill: $color-base
+        fill: $color-base;
       }
     }
 
@@ -27,8 +28,5 @@
 
   @media (min-width: $screen-lg) {
     margin-left: -16px;
-
   }
-
-
 }

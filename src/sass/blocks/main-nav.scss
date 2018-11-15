@@ -1,32 +1,37 @@
 .main-nav {
+  position: absolute;
   top: 83px;
   left: 0;
-  width: 100%;
-  position: absolute;
-  background: $color-base;
   z-index: 10;
+
+  width: 100%;
+
+  background: $color-base;
 
   &--closed {
     transform: scaleY(0);
     transform-origin: top;
+
     transition: transform 0.3s ease-in-out;
   }
 
   &--opened {
-    transform-origin: top;
     transform: scaleY(1);
+    transform-origin: top;
+
     transition: transform 0.3s ease-in-out;
   }
 
   &__link {
     display: block;
     padding: 10px 0;
-    font-family: $font-family--sans-serif;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 42px;
-    text-transform: uppercase;
+    font-family: $font-family--sans-serif;
     text-align: center;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {
@@ -42,7 +47,9 @@
     position: static;
     top: auto;
     left: auto;
+
     width: auto;
+
     background: transparent;
 
     &--closed {
@@ -64,10 +71,10 @@
 
   @media (min-width: $screen-lg) {
     &__link {
-      color: #ffffff;
       font-weight: 600;
       font-size: 15px;
       line-height: 24px;
+      color: #ffffff;
     }
 
     &__item {
