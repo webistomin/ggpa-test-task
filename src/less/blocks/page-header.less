@@ -14,12 +14,6 @@
     flex-wrap: wrap;
     padding: 20px 10px;
     position: relative;
-    //position: fixed;
-    //background-color: #ffffff;
-    //z-index: 10;
-    //width: 100%;
-    //box-sizing: border-box;
-    //top: 0;
   }
 
   &__toggle {
@@ -98,10 +92,10 @@
       content: "";
       width: 853px;
       height: 948px;
-      background-image: url("../img/header-decor.svg");
+      background-image: data-uri("../img/header-decor.svg");
       background-repeat: no-repeat;
-      right: 0;
-      top: -48px;
+      right: 0px;
+      top: -140px;
       background-size: cover;
       z-index: -1;
     }
@@ -110,6 +104,12 @@
 
     &__inner {
       margin-bottom: 146px;
+    }
+  }
+
+  @media @screen-xl {
+    &::before {
+      top: -48px;
     }
   }
 }

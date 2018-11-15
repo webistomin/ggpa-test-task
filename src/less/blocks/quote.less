@@ -2,17 +2,20 @@
   margin-bottom: 100px;
 
   &__container {
+    background-color: @color-base;
+  }
+
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: @color-base;
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
   }
 
   &__title {
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     color: #ffffff;
     font-size: 25px;
     line-height: 22px;
@@ -22,7 +25,7 @@
 
   &__text {
     max-width: 310px;
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     color: rgba(255, 255, 255, 0.8);
     font-size: 18px;
     font-weight: 300;
@@ -35,7 +38,7 @@
     box-sizing: border-box;
     max-width: 196px;
     padding: 10px 25px;
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     line-height: 28px;
     font-size: 18px;
     font-weight: 700;
@@ -56,11 +59,14 @@
     }
   }
 
-  @media @screen-lg {
+  @media @screen-xl {
     &__container {
-      max-width: 1144px;
-      width: 81%;
-      padding-right: 227px;
+      width: 80%;
+    }
+
+    &__wrapper {
+      max-width: 780px;
+      margin: 0 auto;
       padding-top: 60px;
       padding-bottom: 60px;
       align-items: flex-start;

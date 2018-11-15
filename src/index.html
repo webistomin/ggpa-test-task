@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dhrubok</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel=preload href="css/style.min.css" as="style" crossorigin>
   <link rel="preload" href="fonts/circularStd-black.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/circularStd-bold.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/circularStd-book.woff2" as="font" crossorigin>
@@ -313,12 +314,14 @@ To emphasise this I use inline style="display: none" -->
     </section>
     <section class="quote" id="quote">
       <div class="quote__container container">
-        <div class="quote__inner">
-          <h3 class="quote__title">Request a free quote</h3>
-          <p class="quote__text">We will send you a precise calculation
-            in pdf formate</p>
+        <div class="quote__wrapper">
+          <div class="quote__inner">
+            <h3 class="quote__title">Request a free quote</h3>
+            <p class="quote__text">We will send you a precise calculation
+              in pdf formate</p>
+          </div>
+          <a href="#" class="quote__btn">Get a Free Quote</a>
         </div>
-        <a href="#" class="quote__btn">Get a Free Quote</a>
       </div>
     </section>
   </main>

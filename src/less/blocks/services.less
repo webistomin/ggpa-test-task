@@ -59,7 +59,7 @@
 
   &__service {
     color: @color-text--second;
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     font-size: 23px;
     font-weight: 700;
     line-height: 30px;
@@ -69,7 +69,7 @@
   }
 
   &__text {
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     font-size: 18px;
     line-height: 32px;
     font-weight: 300;
@@ -127,7 +127,7 @@
     }
 
     &__item {
-      max-width: 312px;
+      width: 312px;
     }
 
     &__title {
@@ -143,14 +143,33 @@
   }
 
   @media @screen-lg {
-    padding-top: 100px;
-
     &__container {
       width: 89%;
     }
 
+    &__item {
+      width: 280px;
+    }
+  }
+
+  @media @screen-xl {
+    padding-top: 100px;
+
     &__service {
-      margin-bottom: 35px;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      margin-top: auto;
+    }
+
+    &__btn {
+      margin-top: 50px;
+    }
+
+    &__item {
+      width: 312px;
+      max-width: 312px;
     }
   }
 }

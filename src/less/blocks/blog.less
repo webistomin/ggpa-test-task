@@ -26,19 +26,61 @@
 
     &:first-child {
       background-image: url("../img/blog-1@1x.jpg");
+      @supports (background-image: url('../img/blog-1@1x.webp')) {
+        background-image: url('../img/blog-1@1x.webp');
+      }
+
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-size: 371px 201px;
+        background-image: url("../img/blog-1@2x.jpg");
+
+        @supports (background-image: url('../img/blog-1@2x.webp')) {
+          background-image: url('../img/blog-1@2x.webp');
+        }
+      }
     }
 
     &:nth-child(2) {
       background-image: url("../img/blog-2@1x.jpg");
+      @supports (background-image: url('../img/blog-2@1x.webp')) {
+        background-image: url('../img/blog-2@1x.webp');
+      }
+
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-size: 371px 201px;
+        background-image: url("../img/blog-2@2x.jpg");
+
+        @supports (background-image: url('../img/blog-2@2x.webp')) {
+          background-image: url('../img/blog-2@2x.webp');
+        }
+      }
     }
 
     &:last-child {
       background-image: url("../img/blog-3@1x.jpg");
+      @supports (background-image: url('../img/blog-3@1x.webp')) {
+        background-image: url('../img/blog-3@1x.webp');
+      }
+
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-size: 371px 201px;
+        background-image: url("../img/blog-3@2x.jpg");
+
+        @supports (background-image: url('../img/blog-3@2x.webp')) {
+          background-image: url('../img/blog-3@2x.webp');
+        }
+      }
     }
   }
 
   &__heading {
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -59,7 +101,7 @@
   }
 
   &__name {
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: @font-family--sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
@@ -68,7 +110,6 @@
   }
 
   &__text {
-    font-family: "PT Serif", Arial, serif;
     font-size: 18px;
     line-height: 30px;
     color: rgba(18, 32, 60, 0.8);
@@ -112,8 +153,14 @@
   }
 
   @media @screen-lg {
+    &__item {
+      width: 350px;
+    }
+  }
+
+  @media @screen-xl {
     &__container {
-      width: 81%;
+      width: 1156px;
     }
 
     &__list {
@@ -121,9 +168,12 @@
     }
 
     &__item {
-      margin-right: 16px;
-      padding-right: 30px;
-      padding-left: 30px;
+      width: 374px;
+      max-width: none;
+      margin-right: 17px;
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-bottom: 43px;
 
       &:last-child {
         margin-right: 0;

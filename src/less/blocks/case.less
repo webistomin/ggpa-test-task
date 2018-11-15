@@ -25,24 +25,37 @@
 
     &:first-child {
       background-image: url("../img/case-1@1x.jpg");
+      @supports (background-image: url('../img/case-1@1x.webp')) {
+        background-image: url('../img/case-1@1x.webp');
+      }
 
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
         background-size: 572px 253px;
         background-image: url("../img/case-1@2x.jpg");
+        @supports (background-image: url('../img/case-1@2x.webp')) {
+          background-image: url('../img/case-1@2x.webp');
+        }
       }
     }
 
     &:last-child {
       margin-bottom: 0;
       background-image: url("../img/case-2@1x.jpg");
+      @supports (background-image: url('../img/case-2@1x.webp')) {
+        background-image: url('../img/case-2@1x.webp');
+      }
 
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
         background-size: 572px 253px;
         background-image: url("../img/case-2@2x.jpg");
+
+        @supports (background-image: url('../img/case-2@2x.webp')) {
+          background-image: url('../img/case-2@2x.webp');
+        }
       }
     }
   }
@@ -72,7 +85,6 @@
   }
 
   &__text {
-    font-family: "PT Serif", Arial, serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -97,6 +109,12 @@
   }
 
   @media @screen-lg {
+    &__item {
+      width: 550px;
+    }
+  }
+
+  @media @screen-xl {
     &__list {
       justify-content: center;
     }
