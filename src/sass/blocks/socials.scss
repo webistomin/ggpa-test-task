@@ -14,7 +14,7 @@
     &:hover,
     &:focus {
       .socials__icon {
-        fill: @color-base
+        fill: $color-base
       }
     }
 
@@ -25,7 +25,7 @@
     }
   }
 
-  @media @screen-lg {
+  @media (min-width: $screen-lg) {
     margin-left: -16px;
 
   }

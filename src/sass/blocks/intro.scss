@@ -8,9 +8,9 @@
 
   &__title {
     position: relative;
-    font-family: "Circular Std", Arial, sans-serif;
+    font-family: $font-family--sans-serif;
     font-weight: 900;
-    color: @color-base;
+    color: $color-base;
     margin: 0;
     margin-bottom: 40px;
 
@@ -22,12 +22,12 @@
       bottom: -20px;
       width: 100px;
       height: 3px;
-      background-color: @color-action;
+      background-color: $color-action;
     }
   }
 
   &__desc {
-    color: @color-text;
+    color: $color-text;
     font-weight: 400;
     line-height: 30px;
     font-size: 18px;
@@ -39,11 +39,11 @@
     display: none;
   }
 
-  @media @screen-xs {
+  @media (min-width: $screen-xs) {
     padding-bottom: 300px;
   }
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     background-image: url("../img/intro-people.svg"), url("../img/intro-decor.svg");
     padding-bottom: 190px;
     background-size: 45% 50%, 664px 151px;
@@ -68,7 +68,7 @@
     }
   }
 
-  @media @screen-lg {
+  @media (min-width: $screen-lg) {
     padding-bottom: 230px;
     background-size: 601px 335px, 864px 151px;
     background-position: 90% 52%, left 470px;

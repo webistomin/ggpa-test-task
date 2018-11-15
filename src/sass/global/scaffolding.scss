@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: @font-family--serif;
+  font-family: $font-family--serif;
   font-weight: 300;
-  color: @color-text;
+  color: $color-text;
 
 }
 
@@ -19,7 +19,7 @@ ul {
 }
 
 a {
-  color: @color-link;
+  color: $color-link;
   text-decoration: none;
 }
 
@@ -44,14 +44,14 @@ button {
 }
 
 *:focus {
-  outline: 1px dotted @color-base;
+  outline: 1px dotted $color-base;
 }
 
 figure {
   margin: 0;
 }
 
-&::selection {
-  background-color: @color-action;
+*::selection {
+  background-color: $color-action;
   color: #ffffff;
 }

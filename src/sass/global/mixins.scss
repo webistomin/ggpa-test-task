@@ -1,21 +1,21 @@
-.container {
+@mixin container {
   width: 90.625%;
   margin: 0 auto;
 
-  @media @screen-sm {
+  @media (min-width: $screen-sm) {
     width: 92.1875%;
   }
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     width: 85.5172414%;
   }
 
-  @media @screen-lg {
+  @media (min-width: $screen-lg) {
     width: 85.27%;
   }
 }
 
-.visually-hidden () {
+@mixin visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

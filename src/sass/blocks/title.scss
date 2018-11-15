@@ -1,6 +1,6 @@
 .title {
-  color: @color-action;
-  font-family: @font-family--sans-serif;
+  color: $color-action;
+  font-family: $font-family--sans-serif;
   font-size: 16px;
   font-weight: 900;
   line-height: 30px;
@@ -8,7 +8,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     font-size: 20px;
     margin-bottom: 10px;
   }

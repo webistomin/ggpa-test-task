@@ -7,7 +7,7 @@
     display: none;
   }
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     padding-bottom: 40px;
 
     &__desc {
@@ -19,7 +19,7 @@
     }
   }
 
-  @media @screen-xl {
+  @media (min-width: $screen-xl) {
     padding-top: 10px;
   }
 }

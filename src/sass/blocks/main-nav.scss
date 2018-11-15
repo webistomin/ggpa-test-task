@@ -3,7 +3,7 @@
   left: 0;
   width: 100%;
   position: absolute;
-  background: @color-base;
+  background: $color-base;
   z-index: 10;
 
   &--closed {
@@ -21,7 +21,7 @@
   &__link {
     display: block;
     padding: 10px 0;
-    font-family: "Circular Std", Arial, serif;
+    font-family: $font-family--sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 42px;
@@ -30,7 +30,7 @@
 
     &:hover,
     &:focus {
-      color: @color-action;
+      color: $color-action;
     }
 
     &:active {
@@ -38,7 +38,7 @@
     }
   }
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     position: static;
     top: auto;
     left: auto;
@@ -58,11 +58,11 @@
     }
 
     &__link {
-      color: @color-base;
+      color: $color-base;
     }
   }
 
-  @media @screen-lg {
+  @media (min-width: $screen-lg) {
     &__link {
       color: #ffffff;
       font-weight: 600;

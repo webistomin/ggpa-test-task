@@ -80,7 +80,7 @@
   }
 
   &__heading {
-    font-family: @font-family--sans-serif;
+    font-family: $font-family--sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -101,7 +101,7 @@
   }
 
   &__name {
-    font-family: @font-family--sans-serif;
+    font-family: $font-family--sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
@@ -115,7 +115,7 @@
     color: rgba(18, 32, 60, 0.8);
   }
 
-  @media @screen-sm {
+  @media (min-width: $screen-sm) {
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -123,7 +123,7 @@
     }
   }
 
-  @media @screen-md {
+  @media (min-width: $screen-md) {
     padding-top: 98px;
     margin-bottom: 30px;
 
@@ -152,13 +152,13 @@
     }
   }
 
-  @media @screen-lg {
+  @media (min-width: $screen-lg) {
     &__item {
       width: 350px;
     }
   }
 
-  @media @screen-xl {
+  @media (min-width: $screen-xl) {
     &__container {
       width: 1156px;
     }

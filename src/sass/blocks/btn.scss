@@ -3,11 +3,11 @@
   padding: 16px 0;
   box-sizing: border-box;
   width: 200px;
-  font-family: "Circular Std", Arial, sans-serif;
+  font-family: $font-family--sans-serif;
   font-size: 15px;
   text-transform: uppercase;
-  background-color: @color-action;
-  color: @color-link;
+  background-color: $color-action;
+  color: $color-link;
   text-align: center;
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 27px;
