@@ -52,6 +52,7 @@ https://webistomin.github.io/ggpa-test-task/
 <img src="https://image.ibb.co/mqTppf/Screenshot-1.png">
 <img src="https://image.ibb.co/ck0SS0/Screenshot-2.png">
 <img src="https://image.ibb.co/ncJxS0/Screenshot-3.png">
+<img src="https://image.ibb.co/cVb7c0/Screenshot-4.png">
 
 [travis-image]: https://travis-ci.org/webistomin/ggpa-test-task.svg?branch=master
 [travis-url]: https://travis-ci.org/webistomin/ggpa-test-task
