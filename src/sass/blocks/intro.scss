@@ -42,10 +42,6 @@
     opacity: 0.8;
   }
 
-  &__break {
-    display: none;
-  }
-
   @media (min-width: $screen-xs) {
     padding-bottom: 300px;
   }
@@ -56,10 +52,6 @@
     background-image: url("../img/intro-people.svg"), url("../img/intro-decor.svg");
     background-position: 100% 40%, left bottom;
     background-size: 45% 50%, 664px 151px;
-
-    &__break {
-      display: block;
-    }
 
     &__title {
       margin-bottom: 62px;
