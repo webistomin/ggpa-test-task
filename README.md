@@ -36,7 +36,7 @@
 
 
 ## Различные тесты
-<img src="https://ibb.co/gDg9pf">
+<img src="https://image.ibb.co/mqTppf/Screenshot-1.png">
 
 [travis-image]: https://travis-ci.org/webistomin/ggpa-test-task.svg?branch=master
 [travis-url]: https://travis-ci.org/webistomin/ggpa-test-task
