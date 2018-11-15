@@ -7,7 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
-
+var pug = require('gulp-pug');
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -102,6 +102,13 @@ gulp.task("scripts", function() {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task('pug', function() {
+  return gulp.src("src/pug/index.pug")
+    .pipe(pug())
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -124,7 +131,8 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "html",
-  "scripts"
+  "scripts",
+  "pug"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
